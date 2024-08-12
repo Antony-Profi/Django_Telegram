@@ -33,6 +33,7 @@ DEBUG = env.bool("AP_DEBUG")
 
 ALLOWED_HOSTS = ["*"]
 
+BOT_TOKEN = env.str("BOT_TOKEN")
 
 # Application definition
 
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'webtelegram.apps.bot',
+    'webtelegram.apps.management',
 ]
 
 MIDDLEWARE = [
