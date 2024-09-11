@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 from environs import Env
@@ -130,3 +130,38 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Setting up logging
+LOG_LEVEL = env.str("LOG_LEVEL")
+
+LOG_DIR = os.path.join(BASE_DIR, "logging")
+os.makedirs(LOG_DIR, exist_ok=True)
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "full": {
+            "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message}",
+            "style": "{"
+        }
+    },
+    "handlers": {
+        "error_handle": {
+            "level": LOG_LEVEL,
+            "class": "logging.FileHandler",
+            "filename": os.path.join(LOG_DIR, "information.log"),
+            "formatter": "full"
+        },
+    },
+    "root": {
+        "handlers": ["error_handle"],
+        "level": LOG_LEVEL,
+    },
+    "loggers": {
+        "error_logger": {
+            "handlers": ["error_handle"],
+            "level": LOG_LEVEL,
+            "propagate": True,
+        },
+    },
+}
