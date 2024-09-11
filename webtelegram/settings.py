@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+from logging.handlers import TimedRotatingFileHandler
 import os
+from datetime import time
 from pathlib import Path
 
 from environs import Env
@@ -30,6 +32,8 @@ SECRET_KEY = env.str("AP_DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("AP_DEBUG")
+
+TELEGRAM_ID_ADMIN = env.int("TELEGRAM_ID_ADMIN")
 
 ALLOWED_HOSTS = ["*"]
 
@@ -148,18 +152,23 @@ LOGGING = {
     "handlers": {
         "error_handle": {
             "level": LOG_LEVEL,
-            "class": "logging.FileHandler",
+            "class": "logging.handlers.RotatingFileHandler",
             "filename": os.path.join(LOG_DIR, "information.log"),
-            "formatter": "full"
+            "formatter": "full",
+        },
+        "console": {
+            "level": LOG_LEVEL,
+            "class": "logging.StreamHandler",
+            "formatter": "full",
         },
     },
     "root": {
-        "handlers": ["error_handle"],
+        "handlers": ["error_handle", "console"],
         "level": LOG_LEVEL,
     },
     "loggers": {
         "error_logger": {
-            "handlers": ["error_handle"],
+            "handlers": ["error_handle", "console"],
             "level": LOG_LEVEL,
             "propagate": True,
         },
