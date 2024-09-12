@@ -514,3 +514,8 @@ Traceback (most recent call last):
   File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
     if logger_level and logger_level >= logging.INFO:
 TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-12 15:24:48,372 autoreload 7712 18036 Watching for file changes with StatReloader
+INFO 2024-09-12 15:26:21,537 autoreload 7712 18036 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-12 15:26:23,271 autoreload 20372 21608 Watching for file changes with StatReloader
+INFO 2024-09-12 15:26:28,614 autoreload 10400 13644 Watching for file changes with StatReloader
+INFO 2024-09-12 15:29:40,323 autoreload 16488 11228 Watching for file changes with StatReloader

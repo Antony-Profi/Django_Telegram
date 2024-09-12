@@ -9,11 +9,10 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-from logging.handlers import TimedRotatingFileHandler
 import os
-from datetime import time
-from pathlib import Path
 
+from pathlib import Path
+from django.conf import global_settings
 from environs import Env
 
 
@@ -85,7 +84,9 @@ WSGI_APPLICATION = 'webtelegram.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+
 AP_DB_NAME = env.str("AP_DB_NAME")
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
