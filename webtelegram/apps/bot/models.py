@@ -9,6 +9,9 @@ class BotUser(models.Model):
     first_name = models.CharField(_("Имя"), max_length=150, blank=True, null=True)
     last_name = models.CharField(_("Фамилия"), max_length=150, blank=True, null=True)
 
+    def __str__(self):
+        return f"{self.telegram_id}: {self.username}"
+
     class Meta:
         verbose_name = "Пользователь бота"
         verbose_name_plural = "Пользователи бота"
@@ -18,6 +21,9 @@ class TelegramChat(models.Model):
     """Телеграм канал или чат"""
     bot_user = models.ForeignKey(BotUser, verbose_name=_("Пользователь бота"), on_delete=models.CASCADE)
     name = models.CharField(_("Имя канала"), max_length=150, blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.bot_user}: {self.name}"
 
     class Meta:
         verbose_name = "Телеграм канал"
@@ -37,6 +43,9 @@ class InviteLink(models.Model):
     name = models.CharField(_("name"), max_length=150, blank=True, null=True)
     pending_join_request_count = models.IntegerField(_("pending_join_request_count"), blank=True, null=True)
 
+    def __str__(self):
+        return f"{self.link}"
+
     class Meta:
         verbose_name = "Пригласительная ссылка"
         verbose_name_plural = "Пригласительные ссылки"
@@ -52,6 +61,9 @@ class TelegramSubscriber(models.Model):
     subscribed = models.BooleanField(_("Подписан"), default=False)
     datetime_subscribe = models.DateTimeField(_("Время подписки"), blank=True, null=True)
     datetime_unsubscribe = models.DateTimeField(_("Время отписки"), blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.telegram_id}: {self.username}"
 
     class Meta:
         verbose_name = "Подписчик"
