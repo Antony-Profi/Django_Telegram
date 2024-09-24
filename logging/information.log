@@ -1,53 +1,171 @@
-INFO 2024-09-12 15:24:48,372 autoreload 7712 18036 Watching for file changes with StatReloader
-INFO 2024-09-12 15:26:21,537 autoreload 7712 18036 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
-INFO 2024-09-12 15:26:23,271 autoreload 20372 21608 Watching for file changes with StatReloader
-INFO 2024-09-12 15:26:28,614 autoreload 10400 13644 Watching for file changes with StatReloader
-INFO 2024-09-12 15:29:40,323 autoreload 16488 11228 Watching for file changes with StatReloader
-INFO 2024-09-17 15:26:41,973 autoreload 18124 23052 Watching for file changes with StatReloader
-WARNING 2024-09-17 15:26:46,302 log 18124 22712 Not Found: /favicon.ico
-INFO 2024-09-17 15:31:36,100 autoreload 4352 16604 Watching for file changes with StatReloader
-INFO 2024-09-17 15:32:27,156 autoreload 10900 5736 Watching for file changes with StatReloader
-INFO 2024-09-17 15:34:16,647 autoreload 10900 5736 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\settings.py changed, reloading.
-INFO 2024-09-17 15:34:18,486 autoreload 20800 12868 Watching for file changes with StatReloader
-INFO 2024-09-17 15:34:23,797 autoreload 20800 12868 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\settings.py changed, reloading.
-INFO 2024-09-17 15:34:25,123 autoreload 16392 9796 Watching for file changes with StatReloader
-INFO 2024-09-17 15:34:33,491 autoreload 16392 9796 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\settings.py changed, reloading.
-INFO 2024-09-17 15:34:34,771 autoreload 9428 6572 Watching for file changes with StatReloader
-INFO 2024-09-17 15:34:44,842 autoreload 11120 9620 Watching for file changes with StatReloader
-INFO 2024-09-17 15:35:38,997 autoreload 11120 9620 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\settings.py changed, reloading.
-INFO 2024-09-17 15:35:39,918 autoreload 20412 9664 Watching for file changes with StatReloader
-INFO 2024-09-17 15:39:50,489 autoreload 20412 9664 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 15:39:51,596 autoreload 8764 6160 Watching for file changes with StatReloader
-INFO 2024-09-17 15:39:54,184 autoreload 8764 6160 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 15:39:55,350 autoreload 6348 21208 Watching for file changes with StatReloader
-INFO 2024-09-17 15:43:49,711 autoreload 16108 10848 Watching for file changes with StatReloader
-INFO 2024-09-17 15:59:19,134 autoreload 18656 15132 Watching for file changes with StatReloader
-INFO 2024-09-17 16:05:22,644 autoreload 18656 15132 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 16:05:23,809 autoreload 13120 7404 Watching for file changes with StatReloader
-INFO 2024-09-17 16:05:55,230 autoreload 13120 7404 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 16:05:56,142 autoreload 21592 15820 Watching for file changes with StatReloader
-INFO 2024-09-17 16:06:08,422 autoreload 21592 15820 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 16:06:09,598 autoreload 15116 18480 Watching for file changes with StatReloader
-INFO 2024-09-17 16:06:32,269 autoreload 15116 18480 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 16:06:34,157 autoreload 3620 23260 Watching for file changes with StatReloader
-INFO 2024-09-17 16:08:10,194 autoreload 3620 23260 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 16:08:12,173 autoreload 6276 23520 Watching for file changes with StatReloader
-INFO 2024-09-17 16:08:23,825 autoreload 23120 10108 Watching for file changes with StatReloader
-INFO 2024-09-17 16:09:54,705 autoreload 23120 10108 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 16:09:57,751 autoreload 14120 10252 Watching for file changes with StatReloader
-INFO 2024-09-17 16:11:57,636 autoreload 14120 10252 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 16:11:59,734 autoreload 9428 3320 Watching for file changes with StatReloader
-INFO 2024-09-17 16:14:25,006 autoreload 9428 3320 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
-INFO 2024-09-17 16:14:26,455 autoreload 11884 17012 Watching for file changes with StatReloader
-INFO 2024-09-17 16:14:38,756 autoreload 11884 17012 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
-INFO 2024-09-17 16:14:39,915 autoreload 17320 5648 Watching for file changes with StatReloader
-INFO 2024-09-17 16:14:48,019 autoreload 17320 5648 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
-INFO 2024-09-17 16:14:48,905 autoreload 19320 20284 Watching for file changes with StatReloader
-INFO 2024-09-17 16:15:38,710 autoreload 13120 17280 Watching for file changes with StatReloader
-INFO 2024-09-17 16:18:16,132 autoreload 13120 17280 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
-INFO 2024-09-17 16:18:18,216 autoreload 22228 12100 Watching for file changes with StatReloader
-INFO 2024-09-17 16:18:48,338 autoreload 22228 12100 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
-INFO 2024-09-17 16:18:50,458 autoreload 10724 6512 Watching for file changes with StatReloader
-INFO 2024-09-17 16:19:14,158 autoreload 18892 13012 Watching for file changes with StatReloader
-INFO 2024-09-17 16:20:22,625 autoreload 18892 13012 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\admin.py changed, reloading.
-INFO 2024-09-17 16:20:23,846 autoreload 5828 19052 Watching for file changes with StatReloader
+INFO 2024-09-23 19:45:44,007 async_telebot 5572 18428 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-23 19:45:49,828 async_telebot 5572 18428 Received 1 new updates
+INFO 2024-09-23 19:45:49,849 bot_user_dao 5572 14952 ������� �������� user � �� Anton  antony_work
+INFO 2024-09-23 19:45:54,916 async_telebot 5572 18428 Received 1 new updates
+INFO 2024-09-23 19:45:54,929 main_bot 5572 18428 status=['creator', 'left']
+INFO 2024-09-23 19:45:54,930 main_bot 5572 18428 invite_link=None
+INFO 2024-09-23 19:45:54,931 main_bot 5572 18428 full_name='Anton'
+INFO 2024-09-23 19:45:54,932 main_bot 5572 18428 username='antony_work'
+INFO 2024-09-23 19:45:54,933 main_bot 5572 18428 id=1081179210
+INFO 2024-09-23 19:45:54,934 main_bot 5572 18428 �� ������� ��������������� ������: 'NoneType' object has no attribute 'name'
+INFO 2024-09-23 19:45:58,963 async_telebot 5572 18428 Received 1 new updates
+INFO 2024-09-23 19:45:58,969 main_bot 5572 18428 status=['left', 'creator']
+INFO 2024-09-23 19:45:58,969 main_bot 5572 18428 invite_link=None
+INFO 2024-09-23 19:45:58,970 main_bot 5572 18428 full_name='Anton'
+INFO 2024-09-23 19:45:58,971 main_bot 5572 18428 username='antony_work'
+INFO 2024-09-23 19:45:58,972 main_bot 5572 18428 id=1081179210
+INFO 2024-09-23 19:45:58,973 main_bot 5572 18428 �� ������� ��������������� ������: 'NoneType' object has no attribute 'name'
+INFO 2024-09-23 19:48:54,348 autoreload 11400 10684 Watching for file changes with StatReloader
+WARNING 2024-09-23 19:49:11,998 log 11400 3240 Not Found: /favicon.ico
+INFO 2024-09-23 19:53:08,924 autoreload 11400 10684 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-23 19:53:10,078 autoreload 10628 8420 Watching for file changes with StatReloader
+INFO 2024-09-23 19:53:14,262 autoreload 10628 8420 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-23 19:53:16,818 autoreload 13500 4440 Watching for file changes with StatReloader
+INFO 2024-09-23 19:53:19,620 autoreload 13500 4440 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-23 19:53:20,735 autoreload 2344 3176 Watching for file changes with StatReloader
+INFO 2024-09-23 19:53:26,868 autoreload 2344 3176 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-23 19:53:27,959 autoreload 12644 17980 Watching for file changes with StatReloader
+INFO 2024-09-23 19:53:33,272 autoreload 12644 17980 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-23 19:53:34,287 autoreload 6456 20328 Watching for file changes with StatReloader
+INFO 2024-09-23 19:53:41,462 autoreload 6456 20328 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-23 19:53:42,435 autoreload 18960 18448 Watching for file changes with StatReloader
+INFO 2024-09-23 19:53:52,081 autoreload 18960 18448 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-23 19:53:53,564 autoreload 4252 15084 Watching for file changes with StatReloader
+INFO 2024-09-23 19:55:11,786 autoreload 4252 15084 C:\Users\User\Desktop\DjangoWEB_TG\Django_Telegram\webtelegram\apps\bot\models.py changed, reloading.
+INFO 2024-09-23 19:55:12,616 autoreload 12184 17872 Watching for file changes with StatReloader
+INFO 2024-09-24 12:50:38,106 async_telebot 276 21756 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-24 12:50:38,185 async_telebot 276 21756 Received 1 new updates
+INFO 2024-09-24 12:50:38,216 bot_user_dao 276 22668 ������� �������� user � �� Anton  antony_work
+INFO 2024-09-24 12:51:05,244 async_telebot 276 21756 Received 1 new updates
+INFO 2024-09-24 12:51:05,250 main_bot 276 21756 status=['creator', 'left']
+INFO 2024-09-24 12:51:05,251 main_bot 276 21756 invite_link=None
+INFO 2024-09-24 12:51:05,252 main_bot 276 21756 full_name='Anton'
+INFO 2024-09-24 12:51:05,253 main_bot 276 21756 username='antony_work'
+INFO 2024-09-24 12:51:05,254 main_bot 276 21756 id=1081179210
+INFO 2024-09-24 12:51:05,257 main_bot 276 21756 �� ������� ��������������� ������: 'NoneType' object has no attribute 'name'
+INFO 2024-09-24 12:51:05,261 invite_link_dao 276 21756 �� ����� ������ ��� ������ news_about_polls
+ERROR 2024-09-24 12:51:05,264 async_telebot 276 21756 InviteLink() got unexpected keyword arguments: 'chat_id'
+INFO 2024-09-24 12:51:10,760 async_telebot 276 21756 Received 1 new updates
+INFO 2024-09-24 12:51:10,764 main_bot 276 21756 status=['left', 'creator']
+INFO 2024-09-24 12:51:10,765 main_bot 276 21756 invite_link=None
+INFO 2024-09-24 12:51:10,766 main_bot 276 21756 full_name='Anton'
+INFO 2024-09-24 12:51:10,767 main_bot 276 21756 username='antony_work'
+INFO 2024-09-24 12:51:10,767 main_bot 276 21756 id=1081179210
+INFO 2024-09-24 12:51:10,768 main_bot 276 21756 �� ������� ��������������� ������: 'NoneType' object has no attribute 'name'
+INFO 2024-09-24 12:51:10,772 invite_link_dao 276 21756 �� ����� ������ ��� ������ news_about_polls
+ERROR 2024-09-24 12:51:10,774 async_telebot 276 21756 InviteLink() got unexpected keyword arguments: 'chat_id'
+WARNING 2024-09-24 12:53:38,086 async_telebot 276 21756 Polling is stopped.
+ERROR 2024-09-24 12:53:38,087 base_events 276 21756 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-24 12:53:41,230 async_telebot 8124 18584 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-24 12:53:46,873 async_telebot 8124 18584 Received 1 new updates
+INFO 2024-09-24 12:53:46,889 bot_user_dao 8124 12236 ������� �������� user � �� Anton  antony_work
+INFO 2024-09-24 12:53:52,613 async_telebot 8124 18584 Received 1 new updates
+INFO 2024-09-24 12:53:52,620 main_bot 8124 18584 status=['creator', 'left']
+INFO 2024-09-24 12:53:52,621 main_bot 8124 18584 invite_link=None
+INFO 2024-09-24 12:53:52,623 main_bot 8124 18584 full_name='Anton'
+INFO 2024-09-24 12:53:52,624 main_bot 8124 18584 username='antony_work'
+INFO 2024-09-24 12:53:52,625 main_bot 8124 18584 id=1081179210
+INFO 2024-09-24 12:53:52,626 main_bot 8124 18584 �� ������� ��������������� ������: 'NoneType' object has no attribute 'name'
+INFO 2024-09-24 12:53:52,629 invite_link_dao 8124 18584 �� ����� ������ ��� ������ news_about_polls
+ERROR 2024-09-24 12:53:52,630 async_telebot 8124 18584 InviteLink() got unexpected keyword arguments: 'telegtam_chat'
+WARNING 2024-09-24 12:54:31,677 async_telebot 8124 18584 Polling is stopped.
+ERROR 2024-09-24 12:54:31,677 base_events 8124 18584 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-24 12:54:34,227 async_telebot 5744 22264 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-24 12:54:37,739 async_telebot 5744 22264 Received 1 new updates
+INFO 2024-09-24 12:54:37,755 bot_user_dao 5744 22932 ������� �������� user � �� Anton  antony_work
+INFO 2024-09-24 12:54:40,596 async_telebot 5744 22264 Received 1 new updates
+INFO 2024-09-24 12:54:40,596 main_bot 5744 22264 status=['left', 'creator']
+INFO 2024-09-24 12:54:40,596 main_bot 5744 22264 invite_link=None
+INFO 2024-09-24 12:54:40,596 main_bot 5744 22264 full_name='Anton'
+INFO 2024-09-24 12:54:40,612 main_bot 5744 22264 username='antony_work'
+INFO 2024-09-24 12:54:40,612 main_bot 5744 22264 id=1081179210
+INFO 2024-09-24 12:54:40,612 main_bot 5744 22264 �� ������� ��������������� ������: 'NoneType' object has no attribute 'name'
+INFO 2024-09-24 12:54:40,612 invite_link_dao 5744 22264 �� ����� ������ ��� ������ news_about_polls
+INFO 2024-09-24 12:55:26,905 async_telebot 5744 22264 Received 1 new updates
+INFO 2024-09-24 12:55:26,909 main_bot 5744 22264 status=['member', 'left']
+INFO 2024-09-24 12:55:26,910 main_bot 5744 22264 invite_link=None
+INFO 2024-09-24 12:55:26,910 main_bot 5744 22264 full_name='Konstantin_Pavlukhin'
+INFO 2024-09-24 12:55:26,911 main_bot 5744 22264 username=None
+INFO 2024-09-24 12:55:26,912 main_bot 5744 22264 id=997798003
+INFO 2024-09-24 12:55:26,912 main_bot 5744 22264 �� ������� ��������������� ������: 'NoneType' object has no attribute 'name'
+INFO 2024-09-24 12:55:32,085 async_telebot 5744 22264 Received 1 new updates
+INFO 2024-09-24 12:55:32,089 main_bot 5744 22264 status=['left', 'member']
+INFO 2024-09-24 12:55:32,090 main_bot 5744 22264 invite_link=None
+INFO 2024-09-24 12:55:32,091 main_bot 5744 22264 full_name='Konstantin_Pavlukhin'
+INFO 2024-09-24 12:55:32,091 main_bot 5744 22264 username=None
+INFO 2024-09-24 12:55:32,092 main_bot 5744 22264 id=997798003
+INFO 2024-09-24 12:55:32,093 main_bot 5744 22264 �� ������� ��������������� ������: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-24 12:55:46,970 async_telebot 5744 22264 Polling is stopped.
+ERROR 2024-09-24 12:55:46,971 base_events 5744 22264 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'

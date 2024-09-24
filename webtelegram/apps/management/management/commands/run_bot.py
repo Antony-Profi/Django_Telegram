@@ -4,8 +4,8 @@ import logging
 from django.conf import settings
 from django.core.management.base import BaseCommand
 from telebot import util
-from webtelegram.apps.bot.main_bot import bot
 
+from webtelegram.apps.bot.main_bot import bot
 
 logger = logging.getLogger(__name__)
 

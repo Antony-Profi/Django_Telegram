@@ -3,6 +3,12 @@ import telebot
 
 from django.conf import settings
 from telebot.async_telebot import AsyncTeleBot
+from os import environ
+
+from telebot.types import Message
+from webtelegram.apps.bot.middleware import CustomMiddleware
+from webtelegram.services.database.invite_link_dao import update_invite_link, create_public_link
+from webtelegram.services.database.telegram_chat_dao import update_telegram_chat
 
 
 bot = AsyncTeleBot(settings.BOT_TOKEN, parse_mode="HTML")
@@ -11,9 +17,16 @@ telebot.logger.setLevel(settings.LOG_LEVEL)
 
 logger = logging.getLogger(__name__)
 
+bot.setup_middleware(CustomMiddleware())
+
+MY_CHANNELS = [int(environ.get("MY_CHANNELS"))]
+
 
 @bot.chat_member_handler()
-async def chat_member_handler_bot(message):
+async def chat_member_handler_bot(message: Message):
+    if message.chat.id not in MY_CHANNELS:
+        return None
+    telegram_chat = await update_telegram_chat(chat_data=message.chat)
     status = message.difference.get("status")
     logger.info(f"{status=}")
 
@@ -40,6 +53,13 @@ async def chat_member_handler_bot(message):
         logger.info(f"{invite_link_url=}")
     except AttributeError as err:
         logger.info(f"Не получил пригласительную ссылку: {err}")
+        # Не получил пригласительную ссылку, значит ссылка общая, создаём её
+        await create_public_link(telegram_chat=telegram_chat)
+        # Но надо проверить, для тех кто уже когда-то заходил по пригласительной.
+        # У них тоже может не быть ссылки
+    else:
+        # Запомнить пригласительную ссылку для этого канала
+        await update_invite_link(telegram_chat=telegram_chat, invite_link_url=invite_link_url)
 
     current_subscriber_status = status[1]
     if current_subscriber_status == "member":

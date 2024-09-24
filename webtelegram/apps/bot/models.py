@@ -19,11 +19,13 @@ class BotUser(models.Model):
 
 class TelegramChat(models.Model):
     """Телеграм канал или чат"""
-    bot_user = models.ForeignKey(BotUser, verbose_name=_("Пользователь бота"), on_delete=models.CASCADE)
+    # bot_user = models.ForeignKey(BotUser, verbose_name=_("Пользователь бота"), on_delete=models.CASCADE)
     name = models.CharField(_("Имя канала"), max_length=150, blank=True, null=True)
+    chat_id = models.BigIntegerField(_("ID Канала"))
+    username = models.CharField(_("Username канала"), max_length=150, blank=True, null=True)
 
     def __str__(self):
-        return f"{self.bot_user}: {self.name}"
+        return f"{self.name}"
 
     class Meta:
         verbose_name = "Телеграм канал"
@@ -42,6 +44,7 @@ class InviteLink(models.Model):
     member_limit = models.IntegerField(_("Лимит подписок"), blank=True, null=True)
     name = models.CharField(_("name"), max_length=150, blank=True, null=True)
     pending_join_request_count = models.IntegerField(_("pending_join_request_count"), blank=True, null=True)
+    public_link = models.BooleanField(_("Публичная ссылка"), default=False)
 
     def __str__(self):
         return f"{self.link}"
