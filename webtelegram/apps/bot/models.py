@@ -36,18 +36,21 @@ class InviteLink(models.Model):
     """Пригласительные ссылки"""
     telegram_chat = models.ForeignKey(TelegramChat, verbose_name=_("Телеграм канал"), on_delete=models.CASCADE)
     creates_join_request = models.BooleanField(_("Запрос на добавление"), default=False)
-    creator = models.CharField(_("Создатель"), max_length=250, blank=True, null=True)
+    creator_full_name = models.CharField(_("Создатель Имя"), max_length=250, blank=True, null=True)
+    creator_telegram_id = models.CharField(_("Создатель id"), max_length=250, blank=True, null=True)
+    creator_username = models.CharField(_("Создатель username"), max_length=250, blank=True, null=True)
     expire_date = models.CharField(_("expire_date"), max_length=150, blank=True, null=True)
     link = models.CharField(_("Ссылка"), max_length=150, blank=True, null=True)
     is_primary = models.BooleanField(_("Is_primary"), blank=True, null=True)
     is_revoked = models.BooleanField(_("Is revoked"), blank=True, null=True)
     member_limit = models.IntegerField(_("Лимит подписок"), blank=True, null=True)
-    name = models.CharField(_("name"), max_length=150, blank=True, null=True)
+    name = models.CharField(_("Название"), max_length=150, blank=True, null=True)
     pending_join_request_count = models.IntegerField(_("pending_join_request_count"), blank=True, null=True)
     public_link = models.BooleanField(_("Публичная ссылка"), default=False)
+    notification = models.BooleanField(_("Уведомление о подписчиках"), default=False)
 
     def __str__(self):
-        return f"{self.link}"
+        return f"{self.link}: {self.name}"
 
     class Meta:
         verbose_name = "Пригласительная ссылка"
@@ -56,8 +59,9 @@ class InviteLink(models.Model):
 
 class TelegramSubscriber(models.Model):
     """Пользователи телеграм канала"""
-    invite_link = models.ForeignKey(TelegramChat, verbose_name=_("Пригласительная ссылка"), on_delete=models.CASCADE)
-    telegram_id = models.PositiveBigIntegerField(_("ID Telegram"), db_index=True, unique=True)
+    invite_link = models.ForeignKey(InviteLink, verbose_name=_("Пригласительная ссылка"), on_delete=models.CASCADE)
+    telegram_chat = models.ForeignKey(TelegramChat, verbose_name=_("Телеграм канал"), on_delete=models.CASCADE)
+    telegram_id = models.PositiveBigIntegerField(_("ID Telegram"))
     username = models.CharField(_("Username"), max_length=150, blank=True, null=True)
     first_name = models.CharField(_("Имя"), max_length=150, blank=True, null=True)
     last_name = models.CharField(_("Фамилия"), max_length=150, blank=True, null=True)
@@ -71,3 +75,6 @@ class TelegramSubscriber(models.Model):
     class Meta:
         verbose_name = "Подписчик"
         verbose_name_plural = "Подписчики"
+        constraints = [
+            models.UniqueConstraint(name="unique_telegram_chat_and_tg_user_id", fields=["telegram_chat", "telegram_id"])
+        ]

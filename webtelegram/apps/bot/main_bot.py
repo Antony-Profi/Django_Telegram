@@ -5,11 +5,17 @@ from django.conf import settings
 from telebot.async_telebot import AsyncTeleBot
 from os import environ
 
-from telebot.types import Message
+from telebot.types import Message, ChatMemberUpdated
 from webtelegram.apps.bot.middleware import CustomMiddleware
-from webtelegram.services.database.invite_link_dao import update_invite_link, create_public_link
-from webtelegram.services.database.telegram_chat_dao import update_telegram_chat
-
+from webtelegram.services.database.bot_user_dao import update_or_create_tg_user
+from webtelegram.services.database.invite_link_dao import update_invite_link, create_or_get_public_link
+from webtelegram.services.database.telegram_chat_dao import update_telegram_chat, get_all_channels, \
+    get_telegram_chat_by_chat_id
+from webtelegram.services.database.telegram_subscriber_dao import (
+    check_exist_subscriber_in_channel,
+    update_or_create_subscriber
+)
+from webtelegram.services.utils.subscriber_status_parser import member_is_subscriber
 
 bot = AsyncTeleBot(settings.BOT_TOKEN, parse_mode="HTML")
 
@@ -19,16 +25,18 @@ logger = logging.getLogger(__name__)
 
 bot.setup_middleware(CustomMiddleware())
 
-MY_CHANNELS = [int(environ.get("MY_CHANNELS"))]
-
 
 @bot.chat_member_handler()
-async def chat_member_handler_bot(message: Message):
-    if message.chat.id not in MY_CHANNELS:
+async def chat_member_handler_bot(message: ChatMemberUpdated):
+    channels_ids = [channel.chat_id async for channel in await get_all_channels()]
+    if message.chat.id not in channels_ids:
+        logger.info(f"!!! Канала {message.chat.id} нет в списке разрешённых")
         return None
+
     telegram_chat = await update_telegram_chat(chat_data=message.chat)
-    status = message.difference.get("status")
-    logger.info(f"{status=}")
+    if not telegram_chat:
+        logger.warning(f"Чат с ID {message.chat.id} не найден")
+        return None
 
     invite_link = message.invite_link
     logger.info(f"{invite_link=}")
@@ -54,22 +62,43 @@ async def chat_member_handler_bot(message: Message):
     except AttributeError as err:
         logger.info(f"Не получил пригласительную ссылку: {err}")
         # Не получил пригласительную ссылку, значит ссылка общая, создаём её
-        await create_public_link(telegram_chat=telegram_chat)
+        invite_link_db = await create_or_get_public_link(
+            telegram_chat=telegram_chat,
+            chat_username=message.chat.username)
         # Но надо проверить, для тех кто уже когда-то заходил по пригласительной.
         # У них тоже может не быть ссылки
     else:
         # Запомнить пригласительную ссылку для этого канала
-        await update_invite_link(telegram_chat=telegram_chat, invite_link_url=invite_link_url)
+        invite_link_db, create_status = await update_invite_link(
+            telegram_chat=telegram_chat,
+            chat_invite_link_data=message.invite_link)
 
-    current_subscriber_status = status[1]
-    if current_subscriber_status == "member":
+    subscribed = member_is_subscriber(chat_member_updated=message)
+    subscriber_exist = await check_exist_subscriber_in_channel(chat_data=message.chat, user_data=message.from_user)
+    if subscriber_exist is True:
+        """Если пользователь есть в базе, то не трогаем ссылку к которой он привязан"""
+        await update_or_create_subscriber(
+            chat_data=message.chat,
+            user_data=message.from_user,
+            subscribed=subscribed,
+            invite_link=None)
+    else:
+        """Если пользователя нет в базе, то привязываем его к ссылке публичной или приватной"""
+        await update_or_create_subscriber(
+            chat_data=message.chat,
+            user_data=message.from_user,
+            subscribed=subscribed,
+            invite_link=invite_link_db)
+
+    if subscriber_exist is True:
         status_text = "🚀 Подписались"
-    elif current_subscriber_status == "left":
+    elif subscribed is False:
         status_text = "🫤 Отписались"
     else:
         status_text = "😯 Неизвестно"
 
-    text_message = (f"Статус: {status_text}\n"
+    text_message = (f"Канал: {telegram_chat.name}\n"
+                    f"Статус: {status_text}\n"
                     f"Имя: {full_name}\n"
                     f"ID: {id}")
 
@@ -79,8 +108,8 @@ async def chat_member_handler_bot(message: Message):
         text_message += f"\nНазвание ссылки: {invite_link_name}"
     if invite_link_url:
         text_message += f"\n<b>URL</b>: {invite_link_url}"
-
-    await bot.send_message(chat_id=settings.TELEGRAM_ID_ADMIN, text=text_message)
+    if invite_link_db.notification is True:
+        await bot.send_message(chat_id=settings.TELEGRAM_ID_ADMIN, text=text_message)
 
 
 @bot.message_handler(commands=["help", "start"])

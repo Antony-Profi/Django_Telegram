@@ -169,3 +169,551 @@ Traceback (most recent call last):
   File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
     if logger_level and logger_level >= logging.INFO:
 TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 12:16:45,937 async_telebot 22024 8368 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 12:17:09,666 async_telebot 22024 8368 Received 1 new updates
+INFO 2024-09-26 12:17:09,708 main_bot 22024 8368 status=['creator', 'left']
+INFO 2024-09-26 12:17:09,708 main_bot 22024 8368 invite_link=None
+INFO 2024-09-26 12:17:09,709 main_bot 22024 8368 full_name='Anton'
+INFO 2024-09-26 12:17:09,709 main_bot 22024 8368 username='antony_work'
+INFO 2024-09-26 12:17:09,710 main_bot 22024 8368 id=1081179210
+INFO 2024-09-26 12:17:09,711 main_bot 22024 8368 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+ERROR 2024-09-26 12:17:09,712 async_telebot 22024 8368 create_or_get_public_link() missing 1 required positional argument: 'chat_username'
+INFO 2024-09-26 12:17:19,592 async_telebot 22024 8368 Received 1 new updates
+INFO 2024-09-26 12:17:19,597 bot_user_dao 22024 15080 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 12:17:28,050 async_telebot 22024 8368 Received 1 new updates
+INFO 2024-09-26 12:17:28,056 main_bot 22024 8368 status=['left', 'creator']
+INFO 2024-09-26 12:17:28,058 main_bot 22024 8368 invite_link=None
+INFO 2024-09-26 12:17:28,058 main_bot 22024 8368 full_name='Anton'
+INFO 2024-09-26 12:17:28,060 main_bot 22024 8368 username='antony_work'
+INFO 2024-09-26 12:17:28,060 main_bot 22024 8368 id=1081179210
+INFO 2024-09-26 12:17:28,061 main_bot 22024 8368 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+ERROR 2024-09-26 12:17:28,061 async_telebot 22024 8368 create_or_get_public_link() missing 1 required positional argument: 'chat_username'
+WARNING 2024-09-26 12:18:58,009 async_telebot 22024 8368 Polling is stopped.
+ERROR 2024-09-26 12:18:58,009 base_events 22024 8368 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 12:19:01,729 async_telebot 25720 13728 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 12:19:05,267 async_telebot 25720 13728 Received 1 new updates
+INFO 2024-09-26 12:19:05,283 bot_user_dao 25720 13788 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 12:19:13,751 async_telebot 25720 13728 Received 1 new updates
+INFO 2024-09-26 12:19:13,764 main_bot 25720 13728 status=['creator', 'left']
+INFO 2024-09-26 12:19:13,767 main_bot 25720 13728 invite_link=None
+INFO 2024-09-26 12:19:13,768 main_bot 25720 13728 full_name='Anton'
+INFO 2024-09-26 12:19:13,768 main_bot 25720 13728 username='antony_work'
+INFO 2024-09-26 12:19:13,768 main_bot 25720 13728 id=1081179210
+INFO 2024-09-26 12:19:13,768 main_bot 25720 13728 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+ERROR 2024-09-26 12:19:13,768 async_telebot 25720 13728 no such column: bot_invitelink.creator_full_name
+WARNING 2024-09-26 12:19:45,644 async_telebot 25720 13728 Polling is stopped.
+ERROR 2024-09-26 12:19:45,644 base_events 25720 13728 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 12:20:25,241 async_telebot 21976 23944 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 12:20:35,619 async_telebot 21976 23944 Received 1 new updates
+INFO 2024-09-26 12:20:35,630 bot_user_dao 21976 2028 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 12:20:41,126 async_telebot 21976 23944 Received 1 new updates
+INFO 2024-09-26 12:20:41,131 main_bot 21976 23944 status=['left', 'creator']
+INFO 2024-09-26 12:20:41,132 main_bot 21976 23944 invite_link=None
+INFO 2024-09-26 12:20:41,133 main_bot 21976 23944 full_name='Anton'
+INFO 2024-09-26 12:20:41,133 main_bot 21976 23944 username='antony_work'
+INFO 2024-09-26 12:20:41,134 main_bot 21976 23944 id=1081179210
+INFO 2024-09-26 12:20:41,135 main_bot 21976 23944 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+INFO 2024-09-26 12:21:32,164 async_telebot 21976 23944 Received 1 new updates
+INFO 2024-09-26 12:21:32,171 main_bot 21976 23944 status=['member', 'left']
+INFO 2024-09-26 12:21:32,172 main_bot 21976 23944 invite_link=None
+INFO 2024-09-26 12:21:32,173 main_bot 21976 23944 full_name='Konstantin_Pavlukhin'
+INFO 2024-09-26 12:21:32,173 main_bot 21976 23944 username=None
+INFO 2024-09-26 12:21:32,174 main_bot 21976 23944 id=997798003
+INFO 2024-09-26 12:21:32,175 main_bot 21976 23944 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+INFO 2024-09-26 12:22:14,936 async_telebot 21976 23944 Received 1 new updates
+INFO 2024-09-26 12:22:14,936 main_bot 21976 23944 status=['left', 'member']
+INFO 2024-09-26 12:22:14,936 main_bot 21976 23944 invite_link=None
+INFO 2024-09-26 12:22:14,936 main_bot 21976 23944 full_name='Konstantin_Pavlukhin'
+INFO 2024-09-26 12:22:14,936 main_bot 21976 23944 username=None
+INFO 2024-09-26 12:22:14,936 main_bot 21976 23944 id=997798003
+INFO 2024-09-26 12:22:14,936 main_bot 21976 23944 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 12:29:54,959 async_telebot 21976 23944 Polling is stopped.
+ERROR 2024-09-26 12:29:54,972 base_events 21976 23944 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 16:21:40,684 autoreload 12484 20332 Watching for file changes with StatReloader
+INFO 2024-09-26 16:21:47,398 async_telebot 13008 26336 Starting your bot with username: [@webtg_analytics_bot]
+WARNING 2024-09-26 16:21:51,994 log 12484 19224 Not Found: /favicon.ico
+INFO 2024-09-26 16:22:38,232 async_telebot 13008 26336 Received 1 new updates
+INFO 2024-09-26 16:22:38,251 bot_user_dao 13008 22040 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 16:22:49,233 async_telebot 13008 26336 Received 1 new updates
+INFO 2024-09-26 16:22:49,242 main_bot 13008 26336 invite_link=None
+INFO 2024-09-26 16:22:49,243 main_bot 13008 26336 full_name='Anton'
+INFO 2024-09-26 16:22:49,244 main_bot 13008 26336 username='antony_work'
+INFO 2024-09-26 16:22:49,246 main_bot 13008 26336 id=1081179210
+INFO 2024-09-26 16:22:49,247 main_bot 13008 26336 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+ERROR 2024-09-26 16:22:49,252 async_telebot 13008 26336 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x0000021D58E57140>.
+INFO 2024-09-26 16:22:55,051 async_telebot 13008 26336 Received 1 new updates
+INFO 2024-09-26 16:22:55,052 main_bot 13008 26336 invite_link=None
+INFO 2024-09-26 16:22:55,052 main_bot 13008 26336 full_name='Anton'
+INFO 2024-09-26 16:22:55,052 main_bot 13008 26336 username='antony_work'
+INFO 2024-09-26 16:22:55,052 main_bot 13008 26336 id=1081179210
+INFO 2024-09-26 16:22:55,052 main_bot 13008 26336 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 16:22:55,052 subscriber_status_parser 13008 26336 Статус подписчика не определён
+ERROR 2024-09-26 16:22:55,063 async_telebot 13008 26336 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x0000021D58DFF040>.
+WARNING 2024-09-26 16:30:21,395 async_telebot 13008 26336 Polling is stopped.
+ERROR 2024-09-26 16:30:21,399 base_events 13008 26336 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 16:30:27,442 autoreload 20872 22276 Watching for file changes with StatReloader
+INFO 2024-09-26 16:30:31,359 async_telebot 22300 9608 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 16:30:35,445 async_telebot 22300 9608 Received 1 new updates
+INFO 2024-09-26 16:30:35,459 bot_user_dao 22300 26484 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 16:30:40,987 async_telebot 22300 9608 Received 1 new updates
+INFO 2024-09-26 16:30:40,993 main_bot 22300 9608 invite_link=None
+INFO 2024-09-26 16:30:40,994 main_bot 22300 9608 full_name='Anton'
+INFO 2024-09-26 16:30:41,002 main_bot 22300 9608 username='antony_work'
+INFO 2024-09-26 16:30:41,003 main_bot 22300 9608 id=1081179210
+INFO 2024-09-26 16:30:41,005 main_bot 22300 9608 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+ERROR 2024-09-26 16:30:41,013 async_telebot 22300 9608 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x000001F9823C61C0>.
+INFO 2024-09-26 16:30:44,185 async_telebot 22300 9608 Received 1 new updates
+INFO 2024-09-26 16:30:44,190 main_bot 22300 9608 invite_link=None
+INFO 2024-09-26 16:30:44,192 main_bot 22300 9608 full_name='Anton'
+INFO 2024-09-26 16:30:44,192 main_bot 22300 9608 username='antony_work'
+INFO 2024-09-26 16:30:44,192 main_bot 22300 9608 id=1081179210
+INFO 2024-09-26 16:30:44,192 main_bot 22300 9608 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 16:30:44,195 subscriber_status_parser 22300 9608 Статус подписчика не определён
+ERROR 2024-09-26 16:30:44,200 async_telebot 22300 9608 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x000001F98236E1C0>.
+WARNING 2024-09-26 17:02:56,397 async_telebot 22300 9608 Polling is stopped.
+ERROR 2024-09-26 17:02:56,430 base_events 22300 9608 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 17:12:41,028 autoreload 21848 13804 Watching for file changes with StatReloader
+INFO 2024-09-26 17:12:44,249 async_telebot 26112 14176 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 17:12:59,047 async_telebot 26112 14176 Received 1 new updates
+INFO 2024-09-26 17:12:59,065 main_bot 26112 14176 invite_link=None
+INFO 2024-09-26 17:12:59,066 main_bot 26112 14176 full_name='Anton'
+INFO 2024-09-26 17:12:59,067 main_bot 26112 14176 username='antony_work'
+INFO 2024-09-26 17:12:59,069 main_bot 26112 14176 id=1081179210
+INFO 2024-09-26 17:12:59,069 main_bot 26112 14176 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+ERROR 2024-09-26 17:12:59,073 async_telebot 26112 14176 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x00000152644CF340>.
+INFO 2024-09-26 17:13:02,853 async_telebot 26112 14176 Received 1 new updates
+INFO 2024-09-26 17:13:02,856 main_bot 26112 14176 invite_link=None
+INFO 2024-09-26 17:13:02,856 main_bot 26112 14176 full_name='Anton'
+INFO 2024-09-26 17:13:02,856 main_bot 26112 14176 username='antony_work'
+INFO 2024-09-26 17:13:02,856 main_bot 26112 14176 id=1081179210
+INFO 2024-09-26 17:13:02,856 main_bot 26112 14176 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:13:02,856 subscriber_status_parser 26112 14176 Статус подписчика не определён
+ERROR 2024-09-26 17:13:02,868 async_telebot 26112 14176 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x00000152646EE6C0>.
+INFO 2024-09-26 17:13:04,986 async_telebot 26112 14176 Received 1 new updates
+INFO 2024-09-26 17:13:04,992 bot_user_dao 26112 15112 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 17:18:33,325 autoreload 24156 13560 Watching for file changes with StatReloader
+WARNING 2024-09-26 17:18:37,520 async_telebot 26112 14176 Polling is stopped.
+ERROR 2024-09-26 17:18:37,520 base_events 26112 14176 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 17:18:40,888 async_telebot 4524 15392 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 17:18:44,636 async_telebot 4524 15392 Received 1 new updates
+INFO 2024-09-26 17:18:49,847 bot_user_dao 4524 2304 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 17:18:57,466 async_telebot 4524 15392 Received 1 new updates
+INFO 2024-09-26 17:18:57,473 main_bot 4524 15392 invite_link=None
+INFO 2024-09-26 17:18:57,477 main_bot 4524 15392 full_name='Anton'
+INFO 2024-09-26 17:18:57,479 main_bot 4524 15392 username='antony_work'
+INFO 2024-09-26 17:18:57,480 main_bot 4524 15392 id=1081179210
+INFO 2024-09-26 17:18:57,480 main_bot 4524 15392 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+ERROR 2024-09-26 17:18:57,489 async_telebot 4524 15392 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x0000022BDE9A61C0>.
+INFO 2024-09-26 17:19:43,496 async_telebot 4524 15392 Received 1 new updates
+INFO 2024-09-26 17:19:43,496 main_bot 4524 15392 invite_link=None
+INFO 2024-09-26 17:19:43,496 main_bot 4524 15392 full_name='Anton'
+INFO 2024-09-26 17:19:43,496 main_bot 4524 15392 username='antony_work'
+INFO 2024-09-26 17:19:43,496 main_bot 4524 15392 id=1081179210
+INFO 2024-09-26 17:19:43,496 main_bot 4524 15392 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:19:43,509 subscriber_status_parser 4524 15392 Статус подписчика не определён
+ERROR 2024-09-26 17:19:43,509 async_telebot 4524 15392 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x0000022BDE8BCC40>.
+WARNING 2024-09-26 17:29:51,942 async_telebot 4524 15392 Polling is stopped.
+ERROR 2024-09-26 17:29:52,063 base_events 4524 15392 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 17:29:55,413 async_telebot 18756 2976 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 17:29:59,401 async_telebot 18756 2976 Received 1 new updates
+INFO 2024-09-26 17:29:59,418 bot_user_dao 18756 20212 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 17:30:04,349 async_telebot 18756 2976 Received 1 new updates
+INFO 2024-09-26 17:30:04,357 main_bot 18756 2976 invite_link=None
+INFO 2024-09-26 17:30:04,357 main_bot 18756 2976 full_name='Anton'
+INFO 2024-09-26 17:30:04,358 main_bot 18756 2976 username='antony_work'
+INFO 2024-09-26 17:30:04,359 main_bot 18756 2976 id=1081179210
+INFO 2024-09-26 17:30:04,360 main_bot 18756 2976 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+ERROR 2024-09-26 17:30:04,365 async_telebot 18756 2976 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x000001835C9351C0>.
+INFO 2024-09-26 17:30:07,316 async_telebot 18756 2976 Received 1 new updates
+INFO 2024-09-26 17:30:07,325 main_bot 18756 2976 invite_link=None
+INFO 2024-09-26 17:30:07,327 main_bot 18756 2976 full_name='Anton'
+INFO 2024-09-26 17:30:07,328 main_bot 18756 2976 username='antony_work'
+INFO 2024-09-26 17:30:07,330 main_bot 18756 2976 id=1081179210
+INFO 2024-09-26 17:30:07,330 main_bot 18756 2976 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:30:07,330 subscriber_status_parser 18756 2976 Статус подписчика не определён
+ERROR 2024-09-26 17:30:07,330 async_telebot 18756 2976 Field 'id' expected a number but got <coroutine object get_telegram_chat_by_chat_id at 0x000001835C8DE1C0>.
+WARNING 2024-09-26 17:35:18,055 async_telebot 18756 2976 Polling is stopped.
+ERROR 2024-09-26 17:35:18,060 base_events 18756 2976 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 17:35:21,965 async_telebot 26332 4204 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 17:35:26,905 async_telebot 26332 4204 Received 1 new updates
+INFO 2024-09-26 17:35:26,920 bot_user_dao 26332 4900 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 17:35:31,064 async_telebot 26332 4204 Received 1 new updates
+INFO 2024-09-26 17:35:31,069 main_bot 26332 4204 invite_link=None
+INFO 2024-09-26 17:35:31,070 main_bot 26332 4204 full_name='Anton'
+INFO 2024-09-26 17:35:31,071 main_bot 26332 4204 username='antony_work'
+INFO 2024-09-26 17:35:31,072 main_bot 26332 4204 id=1081179210
+INFO 2024-09-26 17:35:31,073 main_bot 26332 4204 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:35:31,092 telegram_subscriber_dao 26332 4204 Не найден подписчик в канале/чате: News Polls. TelegramSubscriber matching query does not exist.
+ERROR 2024-09-26 17:35:31,099 async_telebot 26332 4204 Invalid field name(s) for model TelegramSubscriber: 'firs_name'.
+INFO 2024-09-26 17:35:34,017 async_telebot 26332 4204 Received 1 new updates
+INFO 2024-09-26 17:35:34,020 main_bot 26332 4204 invite_link=None
+INFO 2024-09-26 17:35:34,020 main_bot 26332 4204 full_name='Anton'
+INFO 2024-09-26 17:35:34,025 main_bot 26332 4204 username='antony_work'
+INFO 2024-09-26 17:35:34,028 main_bot 26332 4204 id=1081179210
+INFO 2024-09-26 17:35:34,029 main_bot 26332 4204 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:35:34,033 subscriber_status_parser 26332 4204 Статус подписчика не определён
+WARNING 2024-09-26 17:35:34,039 telegram_subscriber_dao 26332 4204 Не найден подписчик в канале/чате: News Polls. TelegramSubscriber matching query does not exist.
+ERROR 2024-09-26 17:35:34,045 async_telebot 26332 4204 Invalid field name(s) for model TelegramSubscriber: 'firs_name'.
+WARNING 2024-09-26 17:36:42,975 async_telebot 26332 4204 Polling is stopped.
+ERROR 2024-09-26 17:36:42,982 base_events 26332 4204 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 17:36:45,778 async_telebot 5624 20064 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 17:36:50,174 async_telebot 5624 20064 Received 1 new updates
+INFO 2024-09-26 17:36:50,174 bot_user_dao 5624 9868 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 17:36:54,661 async_telebot 5624 20064 Received 1 new updates
+INFO 2024-09-26 17:36:54,670 main_bot 5624 20064 invite_link=None
+INFO 2024-09-26 17:36:54,672 main_bot 5624 20064 full_name='Anton'
+INFO 2024-09-26 17:36:54,673 main_bot 5624 20064 username='antony_work'
+INFO 2024-09-26 17:36:54,673 main_bot 5624 20064 id=1081179210
+INFO 2024-09-26 17:36:54,674 main_bot 5624 20064 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:36:54,680 telegram_subscriber_dao 5624 20064 Не найден подписчик в канале/чате: News Polls. TelegramSubscriber matching query does not exist.
+INFO 2024-09-26 17:36:57,344 async_telebot 5624 20064 Received 1 new updates
+INFO 2024-09-26 17:36:57,351 main_bot 5624 20064 invite_link=None
+INFO 2024-09-26 17:36:57,352 main_bot 5624 20064 full_name='Anton'
+INFO 2024-09-26 17:36:57,353 main_bot 5624 20064 username='antony_work'
+INFO 2024-09-26 17:36:57,354 main_bot 5624 20064 id=1081179210
+INFO 2024-09-26 17:36:57,355 main_bot 5624 20064 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:36:57,358 subscriber_status_parser 5624 20064 Статус подписчика не определён
+ERROR 2024-09-26 17:36:57,371 async_telebot 5624 20064 NOT NULL constraint failed: bot_telegramsubscriber.subscribed
+WARNING 2024-09-26 17:38:15,452 async_telebot 5624 20064 Polling is stopped.
+ERROR 2024-09-26 17:38:15,452 base_events 5624 20064 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 17:38:18,223 async_telebot 25872 22652 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 17:38:21,020 async_telebot 25872 22652 Received 1 new updates
+INFO 2024-09-26 17:38:21,033 bot_user_dao 25872 24820 Успешно обновлен user в БД Anton  antony_work
+INFO 2024-09-26 17:38:25,078 async_telebot 25872 22652 Received 1 new updates
+INFO 2024-09-26 17:38:25,084 main_bot 25872 22652 invite_link=None
+INFO 2024-09-26 17:38:25,085 main_bot 25872 22652 full_name='Anton'
+INFO 2024-09-26 17:38:25,086 main_bot 25872 22652 username='antony_work'
+INFO 2024-09-26 17:38:25,087 main_bot 25872 22652 id=1081179210
+INFO 2024-09-26 17:38:25,088 main_bot 25872 22652 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:39:05,958 async_telebot 25872 22652 Polling is stopped.
+ERROR 2024-09-26 17:39:05,958 base_events 25872 22652 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 17:39:09,085 async_telebot 14216 19860 Starting your bot with username: [@webtg_analytics_bot]
+INFO 2024-09-26 17:39:13,688 async_telebot 14216 19860 Received 1 new updates
+INFO 2024-09-26 17:39:13,691 main_bot 14216 19860 invite_link=None
+INFO 2024-09-26 17:39:13,691 main_bot 14216 19860 full_name='Anton'
+INFO 2024-09-26 17:39:13,691 main_bot 14216 19860 username='antony_work'
+INFO 2024-09-26 17:39:13,691 main_bot 14216 19860 id=1081179210
+INFO 2024-09-26 17:39:13,691 main_bot 14216 19860 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:39:13,691 subscriber_status_parser 14216 19860 Статус подписчика не определён
+INFO 2024-09-26 17:39:35,498 autoreload 26100 17860 Watching for file changes with StatReloader
+INFO 2024-09-26 17:39:57,164 async_telebot 14216 19860 Received 1 new updates
+INFO 2024-09-26 17:39:57,179 main_bot 14216 19860 invite_link=None
+INFO 2024-09-26 17:39:57,179 main_bot 14216 19860 full_name='Konstantin_Pavlukhin'
+INFO 2024-09-26 17:39:57,179 main_bot 14216 19860 username=None
+INFO 2024-09-26 17:39:57,179 main_bot 14216 19860 id=997798003
+INFO 2024-09-26 17:39:57,179 main_bot 14216 19860 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:39:57,179 telegram_subscriber_dao 14216 19860 Не найден подписчик в канале/чате: News Polls. TelegramSubscriber matching query does not exist.
+INFO 2024-09-26 17:39:59,686 async_telebot 14216 19860 Received 1 new updates
+INFO 2024-09-26 17:39:59,702 main_bot 14216 19860 invite_link=None
+INFO 2024-09-26 17:39:59,702 main_bot 14216 19860 full_name='Konstantin_Pavlukhin'
+INFO 2024-09-26 17:39:59,702 main_bot 14216 19860 username=None
+INFO 2024-09-26 17:39:59,702 main_bot 14216 19860 id=997798003
+INFO 2024-09-26 17:39:59,702 main_bot 14216 19860 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+INFO 2024-09-26 17:40:40,546 async_telebot 14216 19860 Received 1 new updates
+INFO 2024-09-26 17:40:40,552 main_bot 14216 19860 invite_link=None
+INFO 2024-09-26 17:40:40,553 main_bot 14216 19860 full_name='Anton'
+INFO 2024-09-26 17:40:40,554 main_bot 14216 19860 username='antony_work'
+INFO 2024-09-26 17:40:40,556 main_bot 14216 19860 id=1081179210
+INFO 2024-09-26 17:40:40,557 main_bot 14216 19860 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+INFO 2024-09-26 17:40:43,188 async_telebot 14216 19860 Received 1 new updates
+INFO 2024-09-26 17:40:43,193 main_bot 14216 19860 invite_link=None
+INFO 2024-09-26 17:40:43,194 main_bot 14216 19860 full_name='Anton'
+INFO 2024-09-26 17:40:43,194 main_bot 14216 19860 username='antony_work'
+INFO 2024-09-26 17:40:43,195 main_bot 14216 19860 id=1081179210
+INFO 2024-09-26 17:40:43,197 main_bot 14216 19860 Не получил пригласительную ссылку: 'NoneType' object has no attribute 'name'
+WARNING 2024-09-26 17:40:43,199 subscriber_status_parser 14216 19860 Статус подписчика не определён
+WARNING 2024-09-26 17:41:09,835 async_telebot 14216 19860 Polling is stopped.
+ERROR 2024-09-26 17:41:09,836 base_events 14216 19860 unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<AsyncTeleBot.infinity_polling() done, defined at C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py:312> exception=TypeError("'>=' not supported between instances of 'str' and 'int'")>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 601, in run_forever
+    self._run_once()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1869, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\pypoetry\Cache\virtualenvs\django-telegram-L_fZ-PaS-py3.9\lib\site-packages\telebot\async_telebot.py", line 370, in infinity_polling
+    if logger_level and logger_level >= logging.INFO:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+INFO 2024-09-26 20:08:26,594 autoreload 13540 19976 Watching for file changes with StatReloader
+INFO 2024-09-26 20:10:00,084 autoreload 17640 24016 Watching for file changes with StatReloader
+WARNING 2024-09-26 20:10:03,201 log 17640 24892 Not Found: /
+WARNING 2024-09-26 20:10:03,315 log 17640 24892 Not Found: /favicon.ico
+WARNING 2024-09-26 20:10:45,482 log 17640 18864 Not Found: /

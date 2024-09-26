@@ -34,8 +34,15 @@ class TelegramChatAdmin(admin.ModelAdmin):
 @admin.register(InviteLink)
 class InviteLinkAdmin(admin.ModelAdmin):
     list_display = get_fields_for_model(InviteLink)
+    search_fields = ["telegram_chat__name", "telegram_chat__chat_id", "telegram_chat__username", "link", "name"]
+    list_filter = ["notification", "public_link"]
+    list_editable = ["notification"]
 
 
 @admin.register(TelegramSubscriber)
 class TelegramSubscriberAdmin(admin.ModelAdmin):
     list_display = get_fields_for_model(TelegramSubscriber)
+    search_fields = ["invite_link__link", "telegram_chat__name", "telegram_chat__chat_id", "telegram_id", "username",
+                     "first_name", "last_name", "subscribed"]
+    list_filter = ["invite_link__name", "invite_link__link", "telegram_chat__name",
+                   "telegram_chat__chat_id", "subscribed"]
